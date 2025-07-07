@@ -29,45 +29,26 @@ AccessEase is a React Native mobile application designed to help people with dis
 - **Icons**: Expo Vector Icons
 - **Language**: JavaScript (JSX)
 
-## Installation & Setup
+## 🚀 Quick Installation
 
-### Prerequisites
-- Node.js (v14 or higher)
-- npm or yarn
-- Expo CLI
-- Expo Go app on your mobile device (for testing)
+**Ready to get started? It's super easy!**
 
-### Steps
+```bash
+git clone https://github.com/hamza-ghaydi/accesease.git
+cd accesease
+npm install
+npm start
+```
 
-1. **Clone the repository**
-   ```bash
-   git clone <repository-url>
-   cd AccessEase
-   ```
+Then scan the QR code with Expo Go app on your phone! 📱
 
-2. **Install dependencies**
-   ```bash
-   npm install
-   ```
+**📋 For detailed installation instructions, see [INSTALLATION.md](INSTALLATION.md)**
 
-3. **Configure AI Integration (Optional)**
-
-   **The app works immediately with mock responses!** No API setup required for testing.
-
-   For production use with real AI responses:
-   - Get your Gemini API key from [Google AI Studio](https://makersuite.google.com/app/apikey)
-   - Open `src/services/geminiApi.js`
-   - Change `USE_MOCK_RESPONSES = true` to `USE_MOCK_RESPONSES = false`
-   - Replace `YOUR_GEMINI_API_KEY_HERE` with your actual API key
-
-4. **Start the development server**
-   ```bash
-   npm start
-   ```
-
-5. **Run on device**
-   - Scan the QR code with Expo Go app (Android) or Camera app (iOS)
-   - Or press `w` to run in web browser for testing
+### ✨ Key Points:
+- **Works immediately** with built-in mock responses
+- **No API setup required** for testing
+- **3-minute setup** from clone to running app
+- **Cross-platform** - works on iOS and Android
 
 ## Project Structure
 
