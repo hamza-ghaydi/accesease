@@ -1,20 +1,43 @@
+import React from 'react';
+import { NavigationContainer } from '@react-navigation/native';
+import { createStackNavigator } from '@react-navigation/stack';
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+
+// Import screens
+import DisabilityTypeScreen from './src/screens/DisabilityTypeScreen';
+import VoiceAssistantScreen from './src/screens/VoiceAssistantScreen';
+import ChatScreen from './src/screens/ChatScreen';
+import DeafAssistantScreen from './src/screens/DeafAssistantScreen';
+
+const Stack = createStackNavigator();
 
 export default function App() {
   return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+    <NavigationContainer>
       <StatusBar style="auto" />
-    </View>
+      <Stack.Navigator
+        initialRouteName="DisabilityType"
+        screenOptions={{
+          headerShown: false, // We'll create custom headers for each screen
+        }}
+      >
+        <Stack.Screen
+          name="DisabilityType"
+          component={DisabilityTypeScreen}
+        />
+        <Stack.Screen
+          name="VoiceAssistant"
+          component={VoiceAssistantScreen}
+        />
+        <Stack.Screen
+          name="Chat"
+          component={ChatScreen}
+        />
+        <Stack.Screen
+          name="DeafAssistant"
+          component={DeafAssistantScreen}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
   );
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-});
